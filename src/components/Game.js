@@ -60,7 +60,7 @@ export default function Game() {
 			shuffledArray[j],
 			...shuffledArray.slice(i + 1, j),
 			shuffledArray[i],
-			...shuffledArray(j + 1),
+			...shuffledArray.slice(j + 1),
 		]);
 		setMoves(moves + 1);
 	};
